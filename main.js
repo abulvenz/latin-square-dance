@@ -246,7 +246,7 @@ setInterval(function() {
 
 m.mount(document.body, {
     view: vnode => [div.banner(
-            h1("Fakushitori"),
+            h1("Latin Square Dance"),
         ),
         div.wrapper(
             div["board" + size(square)](
@@ -288,4 +288,4 @@ m.mount(document.body, {
             }
         })
     ]
-})
+});
