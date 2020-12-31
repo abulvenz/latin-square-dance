@@ -49,13 +49,6 @@ let N = 4;
 const sizes = [4, 5, 6, 8, 9, 10, 12, 16, 36];
 let sizeidx = 0;
 
-const square2 = [
-    [1, 2, 3, 4],
-    [2, 3, 1, 4],
-    [3, 1, 2, 4],
-    [1, 2, 3, 4]
-];
-
 const generate = function(N) {
     /**
      * Pick first row randomly.
@@ -286,6 +279,9 @@ m.mount(document.body, {
                 N = sizes[sizeidx];
                 square = generate(N);
             }
-        })
+        }),
+        a({
+            href: "https://github.com/abulvenz/latin-square-dance"
+        }, "View the code on github")
     ]
 });
