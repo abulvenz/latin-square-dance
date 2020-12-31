@@ -1,0 +1,112 @@
+@import 'reset.css';
+body {
+    margin: 0;
+    display: grid;
+    font-family: Hack, monospace;
+    grid-template-rows: banner 10vh field 90vh;
+    background-color: rgb(26, 3, 26);
+    color: white;
+}
+
+.wrapper {
+    margin: 1vw auto;
+    width: min(85vh, 98vw)
+}
+
+.board6 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr) .2fr;
+    grid-template-rows: repeat(6, 1fr) .2fr .2fr;
+    gap: 1px;
+    grid-gap: 1px;
+}
+
+.board12 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr) .2fr;
+    grid-template-rows: repeat(12, 1fr) .2fr .2fr;
+    gap: 1px;
+    grid-gap: 1px;
+}
+
+.board9 {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr) .2fr;
+    grid-template-rows: repeat(9, 1fr) .2fr .2fr;
+    gap: 1px;
+    grid-gap: 1px;
+}
+
+.board16 {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr) .2fr;
+    grid-template-rows: repeat(16, 1fr) .2fr .2fr;
+    gap: 1px;
+    grid-gap: 1px;
+}
+
+.board36 {
+    display: grid;
+    grid-template-columns: repeat(36, 1fr) .75fr;
+    grid-template-rows: repeat(36, 1fr) .5fr .5fr;
+    gap: 1px;
+    grid-gap: 1px;
+}
+
+.board5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) .2fr;
+    grid-template-rows: repeat(5, 1fr) .2fr .2fr;
+    gap: 1px;
+    grid-gap: 1px;
+}
+
+.board10 {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr) .2fr;
+    grid-template-rows: repeat(10, 1fr) .2fr .2fr;
+    gap: 1px;
+    grid-gap: 1px;
+}
+
+.board4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) .2fr;
+    grid-template-rows: repeat(4, 1fr) .2fr .2fr;
+    gap: 1px;
+    grid-gap: 1px;
+}
+
+.board8 {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr) .2fr;
+    grid-template-rows: repeat(8, 1fr) .2fr .2fr;
+    gap: 1px;
+    grid-gap: 1px;
+}
+
+.box {
+    width: 100%;
+    height: 0;
+    padding-bottom: 50%;
+    display: flex;
+    justify-content: center;
+    padding-top: 50%;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.5vh;
+    color: white;
+    back-ground-color: blue;
+}
+
+.checker {
+    width: .2fr;
+    height: .2fr;
+    background-color: cornflowerblue;
+}
+
+.checker.selected {
+    background-color: aquamarine;
+}
+
+@import './second.css';
