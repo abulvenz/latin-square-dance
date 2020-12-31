@@ -1,2 +1,2 @@
 rm -rf ./docs/
-parcel build --out-dir docs --public-url https://eismaenners.de/latin/ index.html
+parcel build --out-dir docs --public-url https://abulvenz.github.io/latin-square-dance/ index.html
